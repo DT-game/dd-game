@@ -1,8 +1,94 @@
+@import '../../styles/typography.scss';
+
 .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  max-width: 300px;
-  padding: 30px 20px 40px;
-  background-color: white;
+  padding: 40px 50px;
+  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 
+  0 0 .1rem $color-main-title-first,
+  0 0 .2rem $color-main-title-first,
+  0 0 0.8rem $color-title-second,
+  inset 0 0 0.3rem $color-title-second;
+
+  &__title-container {
+    position: relative;
+    margin-bottom: 80px;
+  }
+
+  &__title {
+    color: $color-main-title-first;
+    font-family: $font-family-main-title;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow:
+    0 0 1px $color-main-title-first,
+    0 0 4px $color-main-title-first,
+    0 0 14px $color-main-title-first,
+    0 0 30px $color-title-main,
+    0 0 70px $color-title-main;
+    animation: pulsateMainTitle 1s ease-in-out infinite alternate;
+  }
+
+  &__subtitle {
+    position: absolute;
+    bottom: -70px;
+    left: 40%;
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: $color-title-second;
+    font-family: $font-family-subtitle;
+    font-size: 5.5rem;
+    letter-spacing: 6px;
+    text-align: center;
+    text-transform: none;
+    text-shadow:
+      0 0 1px $color-main-title-first,
+      0 0 4px $color-main-title-first,
+      0 0 10px $color-title-second;
+    animation: pulsateSubtitle 1.5s infinite alternate;
+    transform: rotate(0.94turn);
+  }
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px 40px;
+  }
+}
+
+@keyframes pulsateMainTitle {
+  100% {
+    text-shadow:
+    0 0 1px $color-main-title-first,
+    0 0 4px $color-main-title-first,
+    0 0 14px $color-main-title-first,
+    0 0 35px $color-title-main,
+    0 0 75px $color-title-main,
+    0 0 85px $color-title-main,
+  }
+  0% {
+    text-shadow:
+    0 0 1px $color-main-title-first,
+    0 0 3px $color-main-title-first,
+    0 0 10px $color-main-title-first,
+    0 0 30px $color-title-main,
+    0 0 65px $color-title-main,
+    0 0 75px $color-title-main,
+  }
+}
+
+@keyframes pulsateSubtitle {
+  0%, 18%, 22%, 25%, 53%, 57%, 100% {
+    text-shadow:
+      0 0 1px $color-main-title-first,
+      0 0 4px $color-main-title-first,
+      0 0 10px $color-title-second,
+  }
+  20%, 24% {
+    text-shadow: none;
+  }
 }

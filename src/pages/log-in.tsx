@@ -1,8 +1,11 @@
 import { FormGroup } from "../components";
+import { LogInLayout } from "../layouts/log-in-layout";
 
 const LoginPage = () => {
   return (
-    <FormGroup />
+    <LogInLayout>
+      <FormGroup />
+    </LogInLayout>
   )
 };
 

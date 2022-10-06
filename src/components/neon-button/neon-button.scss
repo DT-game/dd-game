@@ -1,0 +1,32 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
+.neon-button {
+  width: 100%;
+  max-width: 320px;
+  height: 40px;
+  margin: 20px 0;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  text-shadow:
+  0 0 1px #fff;
+  border: 1px solid $color-main-title-first-opacity;
+  border-radius: 10px;
+  background-color: inherit;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-shadow:
+    0 0 1px #fff,
+    0 0 5px #fff,
+    0 0 10px #0fa,
+    0 0 15px #0fa;
+    box-shadow: 
+    0 0 .1rem $color-main-title-first,
+    0 0 .2rem $color-main-title-first,
+    0 0 0.8rem $color-title-second,
+    inset 0 0 0.3rem $color-title-second;
+  }
+}

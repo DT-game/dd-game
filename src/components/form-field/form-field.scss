@@ -1,0 +1,79 @@
+@import '../../styles/colors.scss';
+
+.form-field {
+  position: relative;
+  text-align: center;
+
+  &__label {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $color-text;
+    font-size: 1rem;
+  }
+
+  &__input {
+    position: relative;
+    width: 320px;
+    height: 40px;
+    padding: 8px;
+    padding-left: 11px;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 0.1rem solid $color-main-title-first-opacity;
+    box-sizing: border-box;
+    color: $color-text;
+    background-color: $color-background;
+    font-size: 1rem;
+    outline: none;
+    cursor: pointer;
+    
+    :-webkit-autofill {
+      background-color: $color-background !important;
+    }
+    
+    &:hover,
+    &:focus {
+      border-radius: 4px;
+      box-shadow: 
+      0 0 .1rem $color-main-title-first,
+      0 0 .2rem $color-main-title-first,
+      0 0 0.8rem $color-title-second,
+      inset 0 0 0.3rem $color-title-second;
+    }
+
+  }
+
+  &__icons {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    height: 20px;
+    transform: translateY(-50%);
+  }
+
+  &__delete-text-icon {
+    border:none;
+    background-color: none;
+    cursor: pointer;
+
+    svg {
+      fill: black;
+      transition: 0.3s;
+    }
+  }
+  
+  &__password-icon {
+    border:none;
+    background-color: none;
+    cursor: pointer;
+
+    svg {
+      fill: black;
+      transition: 0.3s;
+    }
+  }
+}

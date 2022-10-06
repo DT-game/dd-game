@@ -1,3 +1,5 @@
+import React from 'react';
+
 interface GlobalLayoutProps {
   children: React.ReactNode;
 };
@@ -5,5 +7,5 @@ interface GlobalLayoutProps {
 export const GlobalLayout: React.FC<GlobalLayoutProps> = ({
   children,
 }) => (
-  <div>{children}</div>
+  <div className="global-layout">{children}</div>
 );

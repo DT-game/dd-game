@@ -1,11 +1,14 @@
+@import './colors.scss';
+@import './typography.scss';
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #001b27;
-  color: rgb(190, 190, 190);
+  font-family: $font-family-text;
+  color: $color-text;
+  background-color: $color-background;
+  letter-spacing: 5px;
 }
 
 a {
