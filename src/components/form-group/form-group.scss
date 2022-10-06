@@ -40,6 +40,7 @@
     color: $color-title-second;
     font-family: $font-family-subtitle;
     font-size: 5.5rem;
+    font-weight: 500;
     letter-spacing: 6px;
     text-align: center;
     text-transform: none;
@@ -48,7 +49,7 @@
       0 0 4px $color-main-title-first,
       0 0 10px $color-title-second;
     animation: pulsateSubtitle 1.5s infinite alternate;
-    transform: rotate(0.94turn);
+    transform: rotate(0.92turn);
   }
   
   &__container {
