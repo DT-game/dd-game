@@ -1,3 +1,3 @@
 export * from './form-field';
-export * from './form-group';
+export * from './logo';
 export * from './neon-button';
