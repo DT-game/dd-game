@@ -1,6 +1,49 @@
+@import '../../styles/colors.scss';
+@import '../../styles/typography.scss';
+
 .log-in-layout {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
+
+  &__wrapper {
+    @media screen and (min-width: 500px) {
+      padding: 40px 50px;
+      border: 1px solid white;
+      border-radius: 10px;
+      box-shadow: 
+      0 0 .1rem $color-main-title-first,
+      0 0 .2rem $color-main-title-first,
+      0 0 0.8rem $color-title-second,
+      inset 0 0 0.3rem $color-title-second;
+    }
+  }
+  
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px 40px;
+
+    &__text {
+      max-width: 320px;
+      margin-bottom: 0;
+      font-size: 0.8rem;
+      text-align: center;
+
+      a {
+        &:hover,
+        &:focus {
+          text-shadow:
+          0 0 1px #fff,
+          0 0 5px #fff,
+          0 0 10px #0fa,
+          0 0 15px #0fa;
+        }
+      }
+    }
+  }
 }
